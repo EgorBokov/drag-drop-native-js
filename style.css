@@ -1,0 +1,83 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial;
+    line-height: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 100px 0;
+}
+
+.list__caption {
+    width: calc(25% - 40px);
+    margin: 20px;
+    list-style-type: none;
+    font-weight: bold;
+    color: #0747a6;
+}
+
+.list__cell {
+    width: calc(25% - 40px);
+    margin: 0 20px;
+    min-height: 150px;
+    list-style-type: none;
+    box-shadow: 0 0 7px 5px rgba(0,0,0,0.2);
+    background-color: #f0f2f5;
+    overflow: hidden;
+}
+
+.list__card {
+    display: flex;
+    min-height: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    cursor: all-scroll;
+    flex-direction: column;
+}
+
+.list__card-header {
+    font-weight: bold;
+    padding: 12px 20px;
+    background-color: #0747a6;
+    color: white;
+}
+
+.list__card-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.hide {
+    display: none;
+}
+
+.hovered {
+    background-color: #d1d8e2;
+}
